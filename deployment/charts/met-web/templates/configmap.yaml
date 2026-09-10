@@ -19,5 +19,6 @@ data:
       "VITE_PENGUIN_ENABLED": "{{ .Values.penguin.enabled }}",
       "VITE_DEFAULT_TENANT": "{{ .Values.tenant.default_tenant }}",
       "VITE_IS_SINGLE_TENANT_ENVIRONMENT": "{{ .Values.tenant.is_single_tenant_environment }}",
-      "VITE_CENTRE_API_URL": "{{ .Values.tenant.centre_api_url }}"
+      "VITE_CENTRE_API_URL": "{{ .Values.tenant.centre_api_url }}",
+      "VITE_SITE_UPDATE_BANNER_ENABLED": "{{ (.Values.featureFlags | default dict).site_update_banner | default "false" }}"
     }

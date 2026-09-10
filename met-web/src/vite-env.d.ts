@@ -15,6 +15,7 @@ interface ImportMetaEnv {
     readonly VITE_DEFAULT_TENANT: string;
     readonly VITE_IS_SINGLE_TENANT_ENVIRONMENT: string;
     readonly VITE_ENGAGEMENT_PROJECT_TYPES: string;
+    readonly VITE_SITE_UPDATE_BANNER_ENABLED: string;
 }
 
 interface ImportMeta {

@@ -3,6 +3,7 @@ import { Grid, MenuItem, TextField } from '@mui/material';
 import { Banner } from 'components/shared/banner/Banner';
 import { MetHeader1, MetLabel, MetParagraph } from 'components/shared/common';
 import TileBlock from './TileBlock';
+import SiteUpdateBanner from './SiteUpdateBanner';
 import { debounce } from 'lodash';
 import { EngagementDisplayStatus } from 'constants/engagementStatus';
 import { LandingContext } from './LandingContext';
@@ -95,6 +96,9 @@ const LandingComponent = () => {
                     alignItems="center"
                     rowSpacing={3}
                 >
+                    <Grid container item xs={10} justifyContent={'flex-start'} marginTop={'2em'}>
+                        <SiteUpdateBanner />
+                    </Grid>
                     <Grid
                         container
                         item

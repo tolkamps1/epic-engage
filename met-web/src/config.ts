@@ -23,6 +23,7 @@ declare global {
 
             // Constants
             VITE_ENGAGEMENT_PROJECT_TYPES: string;
+            VITE_SITE_UPDATE_BANNER_ENABLED: string;
 
             //tenant
             VITE_IS_SINGLE_TENANT_ENVIRONMENT: string;
@@ -78,6 +79,8 @@ const ENGAGEMENT_PROJECT_TYPES: string[] = getEnv(
         'Water Management',
 ).split(',');
 
+const SITE_UPDATE_BANNER_ENABLED = getEnv('VITE_SITE_UPDATE_BANNER_ENABLED', 'false') === 'true';
+
 // tenant config
 const IS_SINGLE_TENANT_ENVIRONMENT = getEnv('VITE_IS_SINGLE_TENANT_ENVIRONMENT', 'true') === 'true';
 const DEFAULT_TENANT = getEnv('VITE_DEFAULT_TENANT');
@@ -99,6 +102,9 @@ export const AppConfig = {
     },
     constants: {
         engagementProjectTypes: ENGAGEMENT_PROJECT_TYPES,
+    },
+    featureFlags: {
+        siteUpdateBanner: SITE_UPDATE_BANNER_ENABLED,
     },
     tenant: {
         isSingleTenantEnvironment: IS_SINGLE_TENANT_ENVIRONMENT,
