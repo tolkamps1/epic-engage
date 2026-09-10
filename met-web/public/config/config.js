@@ -6,4 +6,5 @@ window['_env_'] = {
     // Penguin Analytics
     VITE_PENGUIN_URL: 'http://localhost:3001/analytics',
     VITE_PENGUIN_ENABLED: 'true',
+    VITE_SITE_UPDATE_BANNER_ENABLED: 'true',
 };

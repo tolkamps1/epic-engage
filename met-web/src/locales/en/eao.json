@@ -10,6 +10,10 @@
         "banner": {
             "header": "Environmental Assessment Office Public Engagement",
             "description": "Public participation in environmental assessments is critical, giving citizens input into decisions on whether or not major projects should proceed, and if they do, what safeguards should be in place."
+        },
+        "siteUpdateBanner": {
+            "title": "Updates to viewing public feedback",
+            "description": "We've updated how we share results after a public comment period to make them easier to understand. Tell us what you think using the Website Feedback tab on the bottom right of your screen."
         }
     },
     "comment": {

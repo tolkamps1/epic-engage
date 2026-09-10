@@ -30,6 +30,8 @@ tenant:
   default_tenant: eao
   is_single_tenant_environment: "true"
   centre_api_url: https://centre-api-c8b80a-dev.apps.gold.devops.gov.bc.ca
+featureFlags:
+  site_update_banner: "true"
 service:
   port: 8080
 replicas:
